@@ -1,5 +1,5 @@
-studentName = "Nadia";
-studentAge = 20;
+studentName = "Katherine";
+studentAge = 41;
 isEnrolled = true;
 
 document.write("<h2>Student Info</h2><br>");
