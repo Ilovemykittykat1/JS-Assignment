@@ -1,30 +1,35 @@
-student_name = Nadia;
-studentAge == "20";
-isEnrolled = True; 
+studentName = "Nadia";
+studentAge = 20;
+isEnrolled = true;
 
-document.write("<h2>Student Info</h2>")
-document.write("Name: " + studentName + <br>); 
-document.write("Age: " + student_age); 
-document.write("Enrolled: " + isEnrolled) 
+document.write("<h2>Student Info</h2><br>");
+document.write("Name: " + studentName + "<br>");
+document.write("Age: " + studentAge + "<br>");
+document.write("Enrolled: " + isEnrolled + "<br><br>");
 
-let ageString = String(studentAge)
-document.write("Age Type: " typeof ageString); 
+let ageString = String(studentAge);
+document.write("Age Type: " + typeof(ageString) + "<br><br>");
 
-num1 = prompt("Enter first number");
-num2 = prompt("Enter second number");
-total = num1 + num2; 
+num1 = Number(prompt("Enter first number"));
+num2 = Number(prompt("Enter second number"));
+document.write("Sum: " + (num1 + num2) + "<br><br>");
 
-document.write("Sum: " + total)
-
-userAge = prompt("Enter your age");
-if (userAge = 18) { 
-    document.write("You can vote!"); 
-} else (userAge < 18) { 
-    document.write("Sorry, you can't vote."); 
+// third part
+userAge = Number(prompt("Enter your age"));
+if (userAge >= 18) {
+    document.write("You can vote!<br><br>");
+} else {
+    document.write("Sorry, you can't vote.<br><br>");
 }
 
-for (i = 1; i < 10; i++) 
-    document.write(i)
+// for loop part
+for (i = 1; i < 10; i++) {
+    document.write(i + "<br>");
+}
 
-while num < 10 
-    num = prompt("Enter a number greater than 10")
+// while loop part
+let num = 0;
+while (num < 10) {
+    num = Number(prompt("Enter a number greater than 10"));
+    document.write("You entered: " + num + "<br>");
+}
